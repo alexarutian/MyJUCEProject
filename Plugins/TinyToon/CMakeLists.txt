@@ -19,7 +19,9 @@ juce_add_plugin("${BaseTargetName}"
         PRODUCT_NAME "Tiny Toon Plugin")
 
 target_sources(${BaseTargetName} PRIVATE
-        Source/PluginProcessor.cpp)
+        Source/TinyToonProcessor.cpp
+        Source/TinyToonEditor.cpp
+        )
 
 target_compile_definitions(${BaseTargetName}
         PUBLIC
