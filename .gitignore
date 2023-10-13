@@ -13,6 +13,7 @@ cmake_install.cmake
 CMakeScripts
 
 .idea
+.cache
 
 IDEWorkspaceChecks.plist
 UserInterfaceState.xcuserstate
@@ -23,6 +24,7 @@ xcschememanagement.plist
 *.DS_Store
 *.entitlements
 *.cpb
+*.pkg
 Makefile
 
 workspace.xml
