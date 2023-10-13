@@ -5,9 +5,13 @@
 //Inhereting from PluginHelpers::ProcessorBase, which is just inhereting from juce::AudioProcessor
 //And adding some default implementations
 
-class MinimalAudioPlugin : public PluginHelpers::ProcessorBase
+class TinyToonProcessor : public PluginHelpers::ProcessorBase
 {
 public:
+    TinyToonProcessor();
     void processBlock(juce::AudioBuffer<float>& buffer,
                       juce::MidiBuffer& midiMessages) override;
+    
+    juce::AudioProcessorEditor* createEditor() override;
+
 };
