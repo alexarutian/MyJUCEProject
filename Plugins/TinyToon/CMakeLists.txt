@@ -29,9 +29,17 @@ target_compile_definitions(${BaseTargetName}
         JUCE_USE_CURL=0
         JUCE_VST3_CAN_REPLACE_VST2=0)
 
+juce_add_binary_data(TinyToonBinaryData SOURCES
+        Binary/myfont.ttf
+)
+
 target_link_libraries(${BaseTargetName} PRIVATE
         shared_plugin_helpers
         juce_audio_utils
         juce_recommended_config_flags
         juce_recommended_lto_flags
-        juce_recommended_warning_flags)
+        juce_recommended_warning_flags
+        TinyToonBinaryData
+)
+
+
