@@ -11,4 +11,6 @@ private:
     void paint(juce::Graphics&) override;
     void resized() override;
 
+    juce::Label titleLabel;
+
 };
